@@ -27,7 +27,7 @@ sub describe {
 
 sub context {
   context_description(shift);
-  my $block         = shift;
+  my $block = shift;
 
   $block->();
   context_description(undef);
