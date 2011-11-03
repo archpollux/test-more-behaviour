@@ -14,7 +14,7 @@ our @EXPORT = ( @Test::More::EXPORT, ('describe', 'context', 'it') );
 
 sub describe {
   spec_description(shift);
-  my $block      = shift;
+  my $block = shift;
 
   caller->before_all if caller->can('before_all');
   $block->();
